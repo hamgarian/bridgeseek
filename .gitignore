@@ -22,6 +22,7 @@
 !requirements.txt
 !LICENSE
 !.env.example
+!banner.png
 
 # ── Python ─────────────────────────────────────────────────────────
 __pycache__/
