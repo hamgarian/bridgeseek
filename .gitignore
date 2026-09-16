@@ -1,0 +1,87 @@
+# ── Secrets / credentials ──────────────────────────────────────────
+.env
+.env.*
+!.env.example
+
+# ── DeepSeek bridge runtime state ──────────────────────────────────
+.deepseek_cache.json
+.deepseek_sessions.json
+*.deepseek_cache.json
+*.deepseek_sessions.json
+
+# ── Project files: only the bridge + web API client are tracked ────
+# Everything else in the repo root is scratch/debug/test material.
+# (Negations below re-include the two files we actually want.)
+/*
+!deepseek_bridge.py
+!deepseek_web_api_client.py
+!sha3_wasm_bg.7b9ca65ddd.wasm
+!.gitignore
+!.gitattributes
+!README.md
+!requirements.txt
+!LICENSE
+!.env.example
+
+# ── Python ─────────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+*.egg
+.eggs/
+
+# ── Virtual environments ───────────────────────────────────────────
+venv/
+.venv/
+env/
+ENV/
+
+# ── Test / coverage artifacts ──────────────────────────────────────
+.pytest_cache/
+.tox/
+.coverage
+.coverage.*
+htmlcov/
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+
+# ── Logs / temp ────────────────────────────────────────────────────
+*.log
+logs/
+*.tmp
+*.swp
+*.swo
+*~
+.tmp/
+tmp/
+
+# ── Local test data ────────────────────────────────────────────────
+cats_test/
+
+# ── Debug / scratch scripts ────────────────────────────────────────
+debug_*.py
+*_debug.py
+debug/
+debug_*.json
+debug_*.log
+*.debug
+
+# ── Throwaway ad-hoc test scripts (not the real tests/ suite) ──────
+test_upload.py
+test_resume.py
+test_endpoints.py
+
+# ── OS / editor cruft ──────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.sublime-workspace

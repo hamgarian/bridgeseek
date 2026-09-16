@@ -1,0 +1,23 @@
+# BridgeSeek — runtime dependencies
+# Python 3.10+
+
+# --- HTTP server / API layer ---
+fastapi>=0.110
+uvicorn>=0.27
+pydantic>=2.5
+
+# --- Async runtime ---
+anyio>=4.0
+
+# --- Browser-impersonating HTTP client (TLS/HTTP2 fingerprinting) ---
+curl_cffi>=0.6
+
+# --- Proof-of-work WASM execution ---
+wasmtime>=14.0
+
+# --- Environment loading ---
+python-dotenv>=1.0
+
+# --- Simple HTTP client (used by joe.py; optional httpx path in client) ---
+requests>=2.31
+httpx>=0.27
