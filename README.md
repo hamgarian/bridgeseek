@@ -264,3 +264,9 @@ python -m unittest
 
 See `LICENSE` if present; otherwise treat as private/unlicensed until specified.
 
+
+ 
+ # #   L i c e n s e 
+ 
+ T h i s   p r o j e c t   i s   l i c e n s e d   u n d e r   t h e   M I T   L i c e n s e   -   s e e   t h e   [ L I C E N S E ] ( L I C E N S E )   f i l e   f o r   d e t a i l s .  
+ 
